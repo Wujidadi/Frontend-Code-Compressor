@@ -76,7 +76,7 @@ function cssCompress() {
     output = output.replace(/\,[\s\.\#\d]*\{/g, "{");               // 容錯處理
     output = output.replace(/;\s*;/g, ";");                         // 清除連續分號
     output = output.match(/^\s*(\S+(\s+\S+)*)\s*$/);                // 去掉首尾空白
-    outputArea.value = output;
+    outputArea.value = output[1];
 }
 
 function pack_js(input, base64) {
