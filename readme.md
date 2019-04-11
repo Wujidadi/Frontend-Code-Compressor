@@ -1,3 +1,5 @@
-# JavaScript Compressor
+# Frontend Code Compressor
 
-擷取站長工具 [JS/HTML格式化 工具](http://tool.chinaz.com/tools/jsformat.aspx) 中的 `普通壓縮` 及 `加密壓縮` 功能，並自編 UI。
+HTML 及 JS 部分擷取自站長工具 [JS/HTML格式化工具](http://tool.chinaz.com/tools/jsformat.aspx)，CSS 部分擷取自同站 [CSS格式化工具](http://tool.chinaz.com/Tools/CssFormat.aspx)，並自編 UI。
+
+`ui.min.css`、`script.min.js` 及 `script.encrypt.js` 為本工具實作的成果（原檔案分別為 `ui.css` 及 `script.js`，可參照）。

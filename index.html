@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>前端 code 格式化及壓縮</title>
+    <link rel="stylesheet" href="ui.min.css">
+    <script src="base.js"></script>
+    <script src="jsformat.js"></script>
+    <script src="htmlformat.js"></script>
+</head>
+<body>
+    <div id="select">
+        <label><input type="radio" name="type" id="htmljsmode" checked>HTML + JavaScript</label>
+        <label><input type="radio" name="type" id="cssmode">CSS</label>
+    </div>
+    <div id="main">
+        <div class="half">
+            <div class="input-label" id="input-mark">Input</div>
+            <textarea class="jscode" id="input"></textarea>
+        </div>
+        <div class="half">
+            <div class="input-label" id="output-mark">Output</div>
+            <textarea class="jscode" id="output" readonly></textarea>
+        </div>
+    </div>
+    <div id="button">
+        <button class="btn" id="format">格式化</button>
+        <button class="btn" id="compress">一般壓縮</button>
+        <button class="btn" id="encrypt">加密壓縮</button>
+    </div>
+    <script src="script.encrypt.js"></script>
+</body>
+</html>
