@@ -58,7 +58,7 @@ function htmlJsEncrypte() {
 function cssFormat() {
     let input = inputArea.value;
     let output = input.replace(/\s*([\{\}\:\;\,])\s*/g, "$1");
-    output = output.replace(/;\s*;/g, ";");                       // 清除連續分號
+    output = output.replace(/;\s*;/g, ";");                         // 清除連續分號
     output = output.replace(/\,[\s\.\#\d]*{/g, "{");
     output = output.replace(/([^\s])\{([^\s])/g, "$1 {\n    $2");
     output = output.replace(/([^\s])\}([^\n]*)/g, "$1\n}\n$2");
@@ -71,11 +71,11 @@ function cssFormat() {
 
 function cssCompress() {
     let input = inputArea.value;
-    let output = input.replace(/\/\*(.|\n)*?\*\//g, "");             // 刪除注釋
+    let output = input.replace(/\/\*(.|\n)*?\*\//g, "");            // 刪除注釋
     output = output.replace(/\s*([\{\}\:\;\,])\s*/g, "$1");
-    output = output.replace(/\,[\s\.\#\d]*\{/g, "{");             // 容錯處理
-    output = output.replace(/;\s*;/g, ";");                       // 清除連續分號
-    output = output.match(/^\s*(\S+(\s+\S+)*)\s*$/);              // 去掉首尾空白
+    output = output.replace(/\,[\s\.\#\d]*\{/g, "{");               // 容錯處理
+    output = output.replace(/;\s*;/g, ";");                         // 清除連續分號
+    output = output.match(/^\s*(\S+(\s+\S+)*)\s*$/);                // 去掉首尾空白
     outputArea.value = output;
 }
 
